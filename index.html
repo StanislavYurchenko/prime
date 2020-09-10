@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header__upper-box container">
+        <div class="header__logo logo">
+          <svg class="logo__svg">
+            <use href="./image/sprite.svg#icon-logo"></use>
+          </svg>
+        </div>
+        <div class="header__info">
+          <p class="header__about">
+            Качественная оперативная цифровая, широкоформатная и сувенирная
+            полиграфия!
+          </p>
+          <p class="header__working-time">
+            Работаем с 9 до 18, вс и сб выходные
+          </p>
+        </div>
+        <div class="header__box">
+          <div class="header__inner-box">
+            <div class="header__cabinet-box">
+              <div class="header__cabinet cabinet">
+                <svg class="cabinet__svg">
+                  <use href="./image/sprite.svg#icon-cabinet"></use>
+                </svg>
+              </div>
+              <a class="cabinet__title" href="#">Личный кабинет</a>
+            </div>
+            <a class="header__email email" href="mailto:maket@test-vertka.ua">
+              maket@test-vertka.ua
+            </a>
+          </div>
+          <div class="contacts__box">
+            <div class="facebook contacts__box-icon">
+              <a href="https://www.facebook.com/" target="_blank">
+                <svg class="facebook__svg">
+                  <use href="./image/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
+
+            <div class="phone-box">
+              <div class="header__phone--is-active">
+                <div class="header__phone">
+                  <a class="header__phone-link" href="tel:099-445-54-18">
+                    <div class="phone">
+                      <svg class="phone__svg">
+                        <use href="./image/sprite.svg#icon-phone"></use>
+                      </svg>
+                    </div>
+                    <span class="phone__text">(044) 345-40-42</span>
+                  </a>
+                  <button
+                    class="phone-list__btn js-phone-list-btn"
+                    type="button"
+                  >
+                    <svg class="btn__svg">
+                      <use href="./image/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <ul class="header__phone-list js-list-phone visually-hidden">
+                <li class="header__phone">
+                  <a class="header__phone-link" href="tel:099-445-54-18">
+                    <div class="phone">
+                      <img
+                        src="./image/vodafone.png"
+                        alt="vodafone"
+                        width="26"
+                        hight="26"
+                      />
+                    </div>
+                    <span class="phone__text">(099) 445-54-18</span>
+                  </a>
+                </li>
+                <li class="header__phone">
+                  <a class="header__phone-link" href="tel:096-497-78-03">
+                    <div class="phone">
+                      <img
+                        src="./image/kiyvstar.png"
+                        alt="kiyvstar"
+                        width="26"
+                        hight="26"
+                      />
+                    </div>
+                    <span class="phone__text">(096) 497-78-03</span>
+                  </a>
+                </li>
+                <li class="header__phone">
+                  <a class="header__phone-link" href="tel:063-435-16-81">
+                    <div class="phone">
+                      <img
+                        src="./image/lifesell.png"
+                        alt="lifesell"
+                        width="26"
+                        hight="26"
+                      />
+                    </div>
+                    <span class="phone__text">(063) 435-16-81</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header__cart cart">
+          <svg class="cart__svg">
+            <use href="./image/sprite.svg#icon-cart"></use>
+          </svg>
+          <div class="cart__quantity">3</div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <nav class="header__menu-box container">
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a class="header__link" href="#">Главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__link" href="#">Продукция</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__link" href="#">Новости</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__link" href="#">База знаний</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__link" href="#">О нас</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__link" href="#">Контакты</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__link">
+              <div class="search">
+                <svg class="search__svg">
+                  <use href="./image/sprite.svg#icon-search"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Типография прайм</h1>
+      <section class="offer section">
+        <div class="offer-box container">
+          <div class="offer__title">
+            Оперативная печать полиграфии от 1 дня!
+          </div>
+          <p class="offer__content">Доставка в любой город Украины</p>
+          <button class="offer__button button" type="button">
+            Сделать заказа
+          </button>
+        </div>
+      </section>
+      <div class="callback callback__top">
+        <div class="phone callback__phone">
+          <svg class="phone__svg">
+            <use href="./image/sprite.svg#icon-phone"></use>
+          </svg>
+        </div>
+        <span class="callback__text">Перезвоните мне сейчас!</span>
+      </div>
+      <section class="productions section container">
+        <h2 class="title productions__title">Продукция</h2>
+        <ul class="productions__list">
+          <li class="productions__item">
+            <div class="productions__item-img">
+              <div class="office">
+                <svg class="office__svg">
+                  <use href="./image/sprite.svg#icon-office"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="productions__item-content">
+              <h3 class="production__title">Офисная продукция</h3>
+              <div class="productions__list-box">
+                <ul class="production__list">
+                  <li class="production__item">Визитки</li>
+                  <li class="production__item">Конверты</li>
+                  <li class="production__item">Папки</li>
+                  <li class="production__item">Книги</li>
+                  <li class="production__item">Блокноты</li>
+                  <li class="production__item">Фирменные бланки</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="productions__item">
+            <div class="productions__item-img">
+              <div class="advertising">
+                <svg class="advertising__svg">
+                  <use href="./image/sprite.svg#icon-advertising"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="productions__item-content">
+              <h3 class="production__title">Рекламная продукция</h3>
+              <div class="productions__list-box">
+                <ul class="production__list production__list--two-column">
+                  <li class="production__item">Листовки</li>
+                  <li class="production__item">Флаера</li>
+                  <li class="production__item">Буклеты</li>
+                  <li class="production__item">Календари</li>
+                  <li class="production__item">Блокноты</li>
+                </ul>
+                <ul class="production__list production__list--two-column">
+                  <li class="production__item">Плакаты</li>
+                  <li class="production__item">Баннеры</li>
+                  <li class="production__item">Магниты</li>
+                  <li class="production__item">Наклейки</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="productions__item">
+            <div class="productions__item-img">
+              <div class="business">
+                <svg class="business__svg">
+                  <use href="./image/sprite.svg#icon-business"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="productions__item-content">
+              <h3 class="production__title">Для бизнеса</h3>
+              <div class="productions__list-box">
+                <ul class="production__list">
+                  <li class="production__item">Каталоги</li>
+                  <li class="production__item">Журналы</li>
+                  <li class="production__item">Дисконтные карты</li>
+                  <li class="production__item">Бейджи</li>
+                  <li class="production__item">Гарантиныйные наклейки</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="about section container">
+        <h2 class="title about__title">О нас</h2>
+        <p class="about__offer">Оперативная печать полиграфии от 1 дня!</p>
+        <p class="about__content">
+          Перед долгим заплывом намажьтесь солнцезащитным кремом. Вода не
+          спасает от вредного излучения, оно проникает и на глубину 1 м. <br />
+          Прежде чем отправиться на пляж, съешьте что-нибудь солененькое или
+          выпейте чай с лимоном. Считается, что тем самым вы предотвратите
+          потерю важных минеральных веществ, которые покидают тело вместе с
+          потом, а загар при этом ляжет ровнее. Находясь на солнце, следует
+          больше двигаться — плавать, делать гимнастику, играть в мяч и т.д.
+          Лучше ходить босиком, чем в тапочках. Не рекомендуется покрывать ногти
+          лаком, пусть они отдохнут и получат солнечные лучи и воздух.
+        </p>
+      </section>
+      <div class="line"></div>
+      <section class="news section container">
+        <h2 class="title news__title">Новости</h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <div class="news__item-date">14 марта 2018</div>
+            <div class="news__item-content">
+              Оазисное земледелие поднимает культурный субэкваториальный климат,
+              там же можно с палками
+            </div>
+          </li>
+          <li class="news__item">
+            <div class="news__item-date">14 марта 2018</div>
+            <div class="news__item-content">
+              Оазисное земледелие поднимает культурный субэкваториальный климат,
+              там же можно с палками
+            </div>
+          </li>
+          <li class="news__item">
+            <div class="news__item-date">14 марта 2018</div>
+            <div class="news__item-content">
+              Оазисное земледелие поднимает культурный субэкваториальный климат,
+              там же можно с палками
+            </div>
+          </li>
+        </ul>
+        <button class="button news__buuton" type="button">
+          Смотреть все новости
+        </button>
+      </section>
+      <div class="callback__bottom callback">
+        <div class="phone callback__phone">
+          <svg class="phone__svg">
+            <use href="./image/sprite.svg#icon-phone"></use>
+          </svg>
+        </div>
+        <span class="callback__text">Перезвоните мне сейчас!</span>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo-box">
+          <div class="footer__logo logo">
+            <svg class="logo__svg">
+              <use href="./image/sprite.svg#icon-logo"></use>
+            </svg>
+          </div>
+          <div class="footer__right">2018 — Все права защищены</div>
+        </div>
+        <div class="footer__about-box">
+          <p class="footer__about-box-paragraph">
+            Качественная оперативная цифровая, широкоформатная и сувенирная
+            полиграфия!
+          </p>
+          <p class="footer__about-box-paragraph">
+            Работаем с 9 до 18, вс и сб выходные
+          </p>
+        </div>
+        <ul class="footer__menu-box">
+          <li class="footer__menu-item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Новости</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Продукция</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#"> База знаний</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#"> О нас</a>
+          </li>
+        </ul>
+        <div class="footer__contacts-box">
+          <div class="contacts__box">
+            <div class="facebook contacts__box-icon">
+              <a href="https://www.facebook.com/" target="_blank">
+                <svg class="facebook__svg">
+                  <use href="./image/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="phone">
+              <svg class="phone__svg">
+                <use href="./image/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+
+            <select class="header__phone">
+              <option class="header__phone-option">
+                <span>(044) 345-40-42</span>
+              </option>
+              <option class="header__phone-option">
+                <span>(099) 445-54-18</span>
+              </option>
+              <option class="header__phone-option">
+                <span>(096) 497-78-03</span>
+              </option>
+              <option class="header__phone-option">
+                <span>(063) 435-16-81</span>
+              </option>
+            </select>
+          </div>
+          <a class="contacts__link" href="#">Контакты</a>
+          <div class="glyanetc">
+            <img
+              class="glyanetc__img"
+              src="./image/glyanetc.png"
+              alt="glyanetc logo"
+              width="17"
+              height="16"
+            />
+            <span class="glyanetc__logo">Глянец — Разработка сайтов</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/index.js" type="module"></script>
+  </body>
+</html>
