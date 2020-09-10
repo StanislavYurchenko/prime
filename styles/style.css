@@ -26,21 +26,22 @@
 }
 
 @font-face {
-  font-family: 'Clear Sans', 'Roboto', sans-serif;
+  font-family: 'ClearSans';
   font-style: normal;
   font-weight: 400;
-  src: local('Clear Sans'), url('../fonts/clearsans.woff2') format('woff2');
+  src: local('ClearSans'),
+    url('../fonts/ClearSans-Regular.woff') format('woff2');
 }
 
 @font-face {
-  font-family: 'Clear Sans', 'Roboto', sans-serif;
+  font-family: 'ClearSans';
   font-style: bold;
   font-weight: 700;
-  src: local('Clear Sans'), url('../fonts/clearsansbold.woff2 ') format('woff2');
+  src: local('ClearSans'), url('../fonts/ClearSans-Bold.woff ') format('woff2');
 }
 
 @font-face {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   src: local('Roboto'), local('Roboto-Regular'),
@@ -49,7 +50,7 @@
 }
 
 @font-face {
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum';
   font-style: normal;
   font-weight: 400;
   src: local('Cuprum Regular'), local('Cuprum-Regular'),
@@ -58,9 +59,11 @@
 }
 
 .body {
-  font-family: 'Clear Sans';
+  font-family: 'ClearSans', sans-serif;
   font-size: 14px;
   line-height: 16px;
+  /* overflow: hidden; */
+  /* width: 1170px; */
 }
 
 .container {
@@ -161,9 +164,15 @@
 
 /* PHONE */
 .phone {
+  margin-right: 20px;
   width: 22px;
   height: 22px;
 }
+.header__phone-list .phone {
+  width: 26px;
+  height: 26px;
+}
+
 .phone__svg {
   fill: #fff;
   stroke: #3a4047;
@@ -201,16 +210,16 @@
 }
 .callback__top {
   right: 1%;
-  /* top: 0; */
   transform: translate(0, -50%);
 }
 
 .callback__bottom {
   right: 1%;
   transform: translate(0, -50%);
-  /* transform: translate(120%, 50%); */
 }
-
+.callback__phone {
+  margin: 0;
+}
 .callback__phone .phone__svg {
   fill: #1ab0ce;
   stroke: #ffffff;
@@ -225,6 +234,7 @@
 
 /* HEADER */
 .header {
+  /* overflow: visible; */
 }
 .header__upper-box {
   display: flex;
@@ -274,22 +284,19 @@
   margin-right: 21px;
 }
 
-.phone {
-  margin-right: 20px;
-}
 .phone-box {
   position: relative;
   z-index: 999;
 }
 .header__phone-list {
-  padding: 26px;
+  padding: 20px 24px;
   width: 220px;
   position: absolute;
   background-color: #fff;
   margin: 0;
   z-index: 1000;
-  top: 100%;
-  right: 0;
+  top: 135%;
+  right: -9px;
   filter: drop-shadow(0px 4px 45px rgba(0, 0, 0, 0.15));
 }
 .header__phone-list:after {
@@ -317,9 +324,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0;
 }
 .phone__text {
+  width: 130px;
   font-size: 16px;
   line-height: 19px;
   color: #3a4047;
@@ -587,7 +595,7 @@
   margin-bottom: 34px;
 }
 .about__content {
-  font-family: 'Clear Sans';
+  font-family: 'ClearSans', sans-serif;
   margin: 0;
   font-size: 14px;
   line-height: 16px;
@@ -666,13 +674,13 @@
   color: #3a4047;
 }
 .footer__about-box-paragraph:first-child {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 .footer__about-box-paragraph:last-child {
   margin: 0;
 }
 .footer__menu-box {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   padding: 15px 0 10px 20px;
   margin: 0;
   max-width: 350px;
@@ -709,15 +717,14 @@
   margin-right: 2px;
 }
 .glyanetc__logo {
-  font-family: 'Cuprum';
+  font-family: 'Cuprum', sans-serif;
   font-size: 11px;
   line-height: 13px;
   text-transform: uppercase;
   color: #3a4047;
-  letter-spacing: -1px;
 }
 .contacts__link {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #3a4047;
