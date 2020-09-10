@@ -346,8 +346,8 @@
           </li>
         </ul>
         <div class="footer__contacts-box">
-          <div class="contacts__box">
-            <div class="facebook contacts__box-icon">
+          <div class="contacts__box footer__contacts">
+            <!-- <div class="facebook contacts__box-icon">
               <a href="https://www.facebook.com/" target="_blank">
                 <svg class="facebook__svg">
                   <use href="./image/sprite.svg#icon-facebook"></use>
@@ -358,23 +358,82 @@
               <svg class="phone__svg">
                 <use href="./image/sprite.svg#icon-phone"></use>
               </svg>
+            </div> -->
+
+            <div class="facebook contacts__box-icon">
+              <a href="https://www.facebook.com/" target="_blank">
+                <svg class="facebook__svg">
+                  <use href="./image/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </div>
 
-            <select class="header__phone">
-              <option class="header__phone-option">
-                <span>(044) 345-40-42</span>
-              </option>
-              <option class="header__phone-option">
-                <span>(099) 445-54-18</span>
-              </option>
-              <option class="header__phone-option">
-                <span>(096) 497-78-03</span>
-              </option>
-              <option class="header__phone-option">
-                <span>(063) 435-16-81</span>
-              </option>
-            </select>
+            <div class="phone-box">
+              <div class="header__phone--is-active">
+                <div class="header__phone">
+                  <a class="header__phone-link" href="tel:099-445-54-18">
+                    <div class="phone">
+                      <svg class="phone__svg">
+                        <use href="./image/sprite.svg#icon-phone"></use>
+                      </svg>
+                    </div>
+                    <span class="phone__text">(044) 345-40-42</span>
+                  </a>
+                  <button
+                    class="phone-list__btn js-phone-list-btn"
+                    type="button"
+                  >
+                    <svg class="btn__svg">
+                      <use href="./image/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <ul class="header__phone-list js-list-phone visually-hidden">
+                <li class="header__phone">
+                  <a class="header__phone-link" href="tel:099-445-54-18">
+                    <div class="phone">
+                      <img
+                        src="./image/vodafone.png"
+                        alt="vodafone"
+                        width="26"
+                        hight="26"
+                      />
+                    </div>
+                    <span class="phone__text">(099) 445-54-18</span>
+                  </a>
+                </li>
+                <li class="header__phone">
+                  <a class="header__phone-link" href="tel:096-497-78-03">
+                    <div class="phone">
+                      <img
+                        src="./image/kiyvstar.png"
+                        alt="kiyvstar"
+                        width="26"
+                        hight="26"
+                      />
+                    </div>
+                    <span class="phone__text">(096) 497-78-03</span>
+                  </a>
+                </li>
+                <li class="header__phone">
+                  <a class="header__phone-link" href="tel:063-435-16-81">
+                    <div class="phone">
+                      <img
+                        src="./image/lifesell.png"
+                        alt="lifesell"
+                        width="26"
+                        hight="26"
+                      />
+                    </div>
+                    <span class="phone__text">(063) 435-16-81</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
+
           <a class="contacts__link" href="#">Контакты</a>
           <div class="glyanetc">
             <img
