@@ -54,6 +54,10 @@
     url('../fonts/cuprum-v12-latin_cyrillic-regular.woff') format('woff');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .body {
   font-family: 'Clear Sans', sans-serif;
   font-size: 14px;
