@@ -227,6 +227,7 @@ html {
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
+  cursor: pointer;
 }
 
 .callback__top {
